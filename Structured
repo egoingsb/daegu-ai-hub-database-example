@@ -1,0 +1,53 @@
+Structured
+Query
+Lanaguage
+
+Create
+Read
+Update
+Delete
+
+
+CREATE TABLE "topic" (
+	"id"	INTEGER NOT NULL,
+	"title"	TEXT NOT NULL,
+	"body"	TEXT,
+	"author_name"	TEXT,
+	"author_job"	TEXT,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+INSERT INTO 
+    topic (title, body, author_name, author_job)
+    VALUES(
+        'mysql',
+        'mysql is ...', 
+        'egoing', 
+        'programmer'
+    );
+
+
+INSERT INTO 
+    topic (title, body, author_name, author_job)
+    VALUES(
+        'sqllite',
+        'sqllite is ...', 
+        'egoing', 
+        'programmer'
+    );
+
+
+INSERT INTO 
+    topic (title, body, author_name, author_job)
+    VALUES(
+        'oracle',
+        'oracle is ...', 
+        'basta', 
+        'bio'
+    );
+
+
+SELECT * FROM topic;
+
+
+DELETE FROM topic WHERE id=1;
